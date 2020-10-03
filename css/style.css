@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	background-color: #1697fa;
+}
+
+.jogo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.tabela {
+	width: 500px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tabela .quadrado {
+	width: calc(100% / 3);
+	height: calc(100% / 3);
+	border: 1px solid black;
+	text-align: center;
+	background-color: white;
+}
+
+.tabela .quadrado:hover {
+	background-color: #ccc;
+}
+
+.tabela .quadrado span {
+	font-size: 100px;
+	font-weight: bold;
+}
+
+h1 {
+	position: relative;
+	top: -30px;
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 50px;
+	color: white;
+}
+
+button {
+	position: relative;
+	top: 30px;
+	border: none;
+	padding: 15px;
+	width: 100px;
+	font-weight: bold;
+	background-color: #a86932;
+	cursor: pointer;
+	color: white;
+}
+
+img {
+	position: relative;
+}
+
+.pontos {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.pontos h3:nth-of-type(1) {
+	color: white;
+}
+
+.pontos h3 {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+}
+
+span.jogador {
+	color: white;
+	font-weight: bold;
+}
+
+span.jogador_atual {
+	position: relative;
+	left: -60px;
+	font-weight: bold;
+	font-size: 80px;
+	color: white;
+	background-color: rgba(0, 0, 0, .5);
+	padding: 0 10px;
+}
+
+h3.lista_jogador {
+	position: relative;
+	left: -100px;
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.tabela {
+		margin-left: 20px;
+	}
+}

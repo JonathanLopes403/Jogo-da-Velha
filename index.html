@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da Velha</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<div><h3 class="lista_jogador">Jogador: </h3><span class="jogador_atual" id="jogador_atual"></span></div>
+		<div class="jogo">
+			<h1>Jogo da Velha</h1>
+			<div class="tabela">
+				<div class="quadrado" id="1" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+				<div class="quadrado" id="2" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+				<div class="quadrado" id="3" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+
+				<div class="quadrado" id="4" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+				<div class="quadrado" id="5" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+				<div class="quadrado" id="6" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+
+				<div class="quadrado" id="7" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+				<div class="quadrado" id="8" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+				<div class="quadrado" id="9" onclick="insere(id)"><span class="conteudo"></span></div><!--quadrado-->
+			</div><!--tabela-->
+			<button onclick="resetar()">Resetar</button>
+		</div><!--jogo-->
+		<img src="img/velha2.png">
+		<div class="pontos">
+			<h3>Pontuação: </h3>
+			<h3>X: <span class="jogador" id="pontos-x">0</span></h3>
+			<h3>O: <span class="jogador" id="pontos-o">0</span></h3>
+		</div>
+	</div><!--container-->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
